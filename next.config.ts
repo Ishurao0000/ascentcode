@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    appIsrStatus: false,
-    buildActivity: false,
-  },
+  // keep config minimal and valid
 };
 
 export default nextConfig;
