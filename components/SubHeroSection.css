@@ -1,0 +1,102 @@
+.subhero-section {
+  background-color: #c0b1c5; /* slightly deeper red */
+  padding: 5rem 1.5rem;
+}
+
+.subhero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+/* Each block */
+.subhero-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.subhero-block.reverse {
+  flex-direction: inherit;
+}
+
+/* Image */
+.subhero-image .image {
+  width: 100%;
+  max-width: 600px; /* bigger image */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text content */
+.subhero-text {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  margin-top: -15rem; /* negative spacing for mobile overlap */
+  z-index: 10;
+  max-width: 90%; /* reduced width on mobile */
+  margin-left: 5%;
+}
+
+.subhero-text h2 {
+  font-size: 2.75rem; /* slightly smaller heading */
+  font-weight: 600;
+  color: #c0b1c5;
+  margin-bottom: 1rem;
+}
+
+.subhero-text p {
+  font-size: 1.125rem; /* slightly smaller description */
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.subhero-button {
+  background-color: #c0b1c5; /* red */
+  color: white;
+  padding: 1.25rem 2.25rem;
+  border: none;
+  border-radius: 0;
+  font-size: 1.25rem;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .subhero-block {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .subhero-block.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .subhero-text {
+    margin-top: 0;
+    max-width: 50%; /* narrower text on desktop */
+  }
+
+  .subhero-block:not(.reverse) .subhero-text {
+    transform: translateX(-5rem); /* overlap left */
+  }
+
+  .subhero-block.reverse .subhero-text {
+    transform: translateX(5rem); /* overlap right */
+  }
+
+  .subhero-text h2 {
+    font-size: 3.8rem;
+  }
+
+  .subhero-text p {
+    font-size: 1.5rem;
+  }
+
+  .subhero-button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}

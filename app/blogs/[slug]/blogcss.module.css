@@ -1,0 +1,202 @@
+/* -------- Root page -------- */
+.page {
+  background: #f7f8fa;
+  padding: 96px 24px;
+  min-height: 100vh;
+}
+
+/* -------- Article container -------- */
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 80px 90px;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.04),
+    0 40px 80px rgba(0, 0, 0, 0.06);
+}
+
+/* -------- Header -------- */
+.header {
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+/* Title */
+.title {
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+/* Meta */
+.meta {
+  font-size: 13px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.meta span {
+  color: #020617;
+  font-weight: 600;
+}
+
+/* -------- Blog content -------- */
+.blogContent {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+  font-size: 19px;
+  line-height: 1.85;
+  color: #334155;
+}
+
+/* Paragraph rhythm */
+.blogContent p {
+  margin-bottom: 28px;
+}
+
+/* -------- Headings -------- */
+.blogContent h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 90px 0 28px;
+  color: #020617;
+  letter-spacing: -0.01em;
+}
+
+.blogContent h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 56px 0 18px;
+  color: #020617;
+}
+
+/* -------- Images -------- */
+.blogContent img {
+  width: 100%;
+  margin: 70px 0;
+  border-radius: 22px;
+  background: #f1f5f9;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08),
+    0 40px 60px rgba(0, 0, 0, 0.06);
+}
+
+/* Image alignment variation (auto magazine feel) */
+.blogContent img:nth-of-type(odd) {
+  margin-left: -60px;
+  width: calc(100% + 120px);
+}
+
+.blogContent img:nth-of-type(even) {
+  margin-right: -60px;
+  width: calc(100% + 120px);
+}
+
+/* -------- Blockquotes -------- */
+.blogContent blockquote {
+  margin: 80px 0;
+  padding-left: 28px;
+  border-left: 4px solid #0f172a;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #020617;
+}
+
+/* -------- Lists -------- */
+.blogContent ul,
+.blogContent ol {
+  margin: 30px 0 30px 22px;
+}
+
+.blogContent li {
+  margin-bottom: 12px;
+}
+
+/* -------- Links -------- */
+.blogContent a {
+  color: #020617;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.blogContent a:hover {
+  opacity: 0.7;
+}
+
+/* -------- Mobile refinement -------- */
+@media (max-width: 1024px) {
+  .container {
+    padding: 60px;
+  }
+
+  .blogContent img:nth-of-type(odd),
+  .blogContent img:nth-of-type(even) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 40px 12px;
+  }
+
+  .container {
+    padding: 32px 24px;
+    border-radius: 14px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .blogContent {
+    font-size: 16px;
+  }
+
+  .blogContent h2 {
+    font-size: 22px;
+    margin-top: 60px;
+  }
+
+  .blogContent h3 {
+    font-size: 18px;
+  }
+}
+.ctaWrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(79, 70, 229, 0.35);
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+}
