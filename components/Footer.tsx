@@ -14,6 +14,7 @@ export default function Footer() {
           >
             info@ascentstandard.com
           </a>
+          <br />
            <a
             href="mailto:bids@ascentstandard.com"
             className="font-semibold hover:text-gray-600 transition"
