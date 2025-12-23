@@ -37,7 +37,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
           <div className="flex gap-4 text-gray-700">
-            <a href="#" className="hover:text-black">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/ascent-standard/posts/?feedView=all" className="hover:text-black">LinkedIn</a>
           </div>
         </div>
       </div>
