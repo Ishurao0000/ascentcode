@@ -3,7 +3,7 @@ import "@/styles/testimonials.css";
 const testimonials = [
   {
     name: "Daniel Clifford",
-    company: "Ascent Standard",
+    company: "Carwale",
     highlight: "Exceptional insights that drive real decisions",
     message:
       "Ascent Standard helped us navigate a complex market with clarity. Their data-driven approach and research depth gave us the confidence to move forward decisively.",
