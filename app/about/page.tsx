@@ -11,7 +11,7 @@ export default function AboutPage() {
 
   {/* Desktop Banner */}
   <img
-    src="/assets/webabout.jpg"
+    src="/assets/webabout2.png"
     alt="About banner desktop"
     className="hidden md:block w-full h-auto object-contain"
   />
